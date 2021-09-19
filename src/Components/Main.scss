@@ -1,0 +1,144 @@
+$color1: #e9e8e8;
+.Main {
+   width: 1400px;
+   min-height: 1000px;
+   background-color: rgb(158, 158, 158);
+   margin: 0 auto;
+   padding-top: 20px;
+   position: relative;
+   .CreateNote {
+      margin-left: 1rem;
+      cursor: pointer;
+   }
+   form {
+      input {
+         margin-top: 0.5rem;
+      }
+   }
+   .Main__buttons {
+      button {
+         &:first-child {
+            width: 90%;
+         }
+         width: 10%;
+      }
+   }
+   form {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin-left: 1rem;
+      // padding-top: 2rem;
+      input {
+         height: 25px;
+         margin-bottom: 5px;
+         outline: none;
+      }
+      textarea {
+         height: 50px;
+         margin-bottom: 5px;
+         resize: none;
+         outline: none;
+      }
+      button {
+         height: 25px;
+         cursor: pointer;
+         margin-left: 0px;
+      }
+   }
+   .notes {
+      .notes__elem {
+         width: 30%;
+         background-color: $color1;
+         min-height: 50px;
+         margin-left: 1rem;
+         border-radius: 5px;
+         padding-left: 8px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 2rem;
+         cursor: pointer;
+         // position: relative;
+         display: flex;
+         justify-content: space-between;
+         p {
+            font-weight: bold;
+         }
+         button {
+            margin-right: 0.5rem;
+         }
+         .tegs {
+            color: rgb(51, 48, 204);
+         }
+      }
+   }
+   .checkNote {
+      max-width: 40%;
+      position: absolute;
+      top: 200px;
+      left: 40%;
+      cursor: pointer;
+      z-index: 1;
+      p {
+         margin: 0;
+         font-size: 22px;
+
+         &:first-child {
+            font-weight: bold;
+            font-size: 32px;
+         }
+      }
+      .tegs {
+         color: rgb(51, 48, 204);
+         font-size: 18px;
+         &:focus{
+            color: red;
+         }
+      }
+      button {
+         position: absolute;
+      }
+   }
+   .editNote {
+      width: 40%;
+      height: 300px;
+      position: absolute;
+      top: 10rem;
+      right: 19rem;
+      cursor: pointer;
+      z-index: 2;
+      background-color: inherit;
+      display: flex;
+      flex-direction: column;
+      p {
+         text-align: center;
+         font-size: 24px;
+         margin: 0;
+         margin-bottom: 8px;
+         font-weight: bold;
+      }
+      form {
+         width: 70%;
+         input {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            height: 25px;
+            margin-bottom: 5px;
+         }
+         textarea {
+            height: 75px;
+            font-size: 18px;
+
+         }
+         .focus:focus{
+            color: blue;        
+         }
+         button {
+            margin-top: 5px;
+            margin-left: 0;
+         }
+      }
+   }
+}
